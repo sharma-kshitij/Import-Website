@@ -23,18 +23,28 @@
   .font-montserrat {
     font-family: 'Montserrat', sans-serif;
   }
-  html{
+
+  html {
     scroll-behavior: smooth;
   }
+
   a:hover {
     text-decoration: none;
+  }
+  li{
+    list-style-type: none;
   }
 
   .col-md-4 {
     text-align: center;
   }
 
-  .row{
+  .col-md-4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .row {
     padding: 0;
     margin: 0;
   }
@@ -46,10 +56,12 @@
   img {
     width: 100%;
   }
-  #logo{
+
+  #logo {
     width: 40px;
   }
-  .bg-custom{
+
+  .bg-custom {
     background-color: #414850;
   }
 
@@ -147,40 +159,130 @@
     margin: 20px;
   }
 
-  #content-2{
+  #content-2 {
     background-color: #414850;
     color: white;
 
   }
-  #aboutUs{
+
+  #aboutUs {
     padding: 20px;
     font-size: 3rem;
     text-align: center;
   }
-  .aboutDiv{
+
+  .aboutDiv {
     padding: 50px;
   }
-  #specializations{
+
+  #specializations {
     text-align: center;
     margin-bottom: 100px;
   }
-  .specializationsPoint{
-    margin:20px 0px 20px 0;
+
+  .specializationsPoint {
+    margin: 20px 0px 20px 0;
     text-align: left;
   }
-  .icon{
+
+  .icon {
     padding: 20px
   }
-  #divider34{
-    border:0;
-    border-bottom:dotted;
-    width: 20%;
-    border-width: 20px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  #productHead{
+
+  #productHead {
     text-align: center;
+    padding: 75px;
+  }
+
+  #content-4 {
+    background-color: #414850;
+    color: white;
+  }
+
+  .productImg {
+    padding: 10px;
+  }
+
+  .card {
+    margin: 10px;
+    padding: 10px;
+    border: 0;
+  }
+
+  .card-img-top {
+    border-radius: 50%;
+    width: 50%
+  }
+
+  #testimonialHead {
+    text-align: center;
+    padding: 75px;
+  }
+
+
+
+
+
+  /* footer */
+  .footerLink{
+    color: white;
+  }
+  .footerIcon{
+    color: white;
+    font-size: 2rem;
+    padding:10px;
+  }
+  .footerIcon:hover{
+    color: grey;
+  }
+  .footerLink:hover{
+    color: grey;
+  }
+
+  .footer {
+    background: #414850;
+    color: white;
+
+    .links {
+      ul {
+        list-style-type: none;
+      }
+
+      li a {
+        color: white;
+        transition: color .2s;
+
+        &:hover {
+          text-decoration: none;
+          color: #4180CB;
+        }
+      }
+    }
+
+    .about-company {
+      i {
+        font-size: 25px;
+      }
+
+      a {
+        color: white;
+        transition: color .2s;
+
+        &:hover {
+          color: #4180CB
+        }
+      }
+    }
+
+    .location {
+      i {
+        font-size: 18px;
+      }
+    }
+
+    .copyright p {
+      border-top: 1px solid rgba(255, 255, 255, .1);
+    }
   }
 </style>
 
@@ -225,7 +327,7 @@
                 <a class="dropdown-item" href="#">Copper Products</a>
                 <a class="dropdown-item" href="#">Packaging Products</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Gallery</a>
+                <a class="dropdown-item" href="#content-4">Gallery</a>
               </div>
             </li>
             <li class="nav-item">
@@ -254,7 +356,7 @@
           <h1 class="h1 font-montserrat">Horizon Exports and Imports</h1>
           <h5 class="h5 font-ubuntu">For All Your Transportation Needs</h5>
           <a class="myButtonDark" href="#content-2">Know More</a>
-          <a class="myButtonDark" href="#">Contact Us</a>
+          <a class="myButtonDark" href="mailto:someone@site.com">Contact Us</a>
         </div>
         <div class="col-md-8">
           <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
@@ -289,7 +391,8 @@
         <div class="row">
           <div class="col-md-6 aboutDiv">
             <h3 id="aboutUs" class="font-montserrat">About Us</h3>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
           </div>
           <div class="col-md-6">
             <img id="horizon-logo" src="images/horizon-logo.jpg" alt="">
@@ -302,34 +405,143 @@
 
     <section id="content-3">
 
-        <h1 id="specializations" class="font-ubuntu">Our Specializations</h1>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="font-ubuntu specializationsPoint">Export  <i class="icon fas fa-dolly-flatbed"></i></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <h1 id="specializations" class="font-ubuntu">Our Specializations</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="font-ubuntu specializationsPoint">Export <i class="icon fas fa-dolly-flatbed"></i></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
 
-              <h3 class="font-ubuntu specializationsPoint">Sourcing Agents  <i class="icon fas fa-users"></i></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-            <div class="col-md-6">
-              <h3 class="font-ubuntu specializationsPoint">Import Agent  <i class="icon fas fa-project-diagram"></i></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <h3 class="font-ubuntu specializationsPoint">Sourcing Agents <i class="icon fas fa-users"></i></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="font-ubuntu specializationsPoint">Import Agent <i class="icon fas fa-project-diagram"></i></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
 
-              <h3 class="font-ubuntu specializationsPoint">Training and Consultancy  <i class="icon fas fa-user-graduate"></i></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
+            <h3 class="font-ubuntu specializationsPoint">Training and Consultancy <i class="icon fas fa-user-graduate"></i></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           </div>
         </div>
+      </div>
 
     </section>
 
-    <br> <hr id="divider34">
+    <br> <br>
 
     <section id="content-4">
-      <h1 id="productHead" class="font-ubuntu">Products Gallery</h1>
+      <div class="container">
+        <h1 id="productHead" class="font-ubuntu">Products Gallery</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <img class="productImg" src="images/1.jpg" alt="">
+            <img class="productImg" src="images/2.jpg" alt="">
+            <img class="productImg" src="images/3.jpg" alt="">
+            <img class="productImg" src="images/4.jpg" alt="">
+            <img class="productImg" src="images/12.jpg" alt="">
+          </div>
+          <div class="col-md-4">
+            <img class="productImg" src="images/5.jpg" alt="">
+            <img class="productImg" src="images/6.jpeg" alt="">
+            <img class="productImg" src="images/7.jpg" alt="">
+            <img class="productImg" src="images/8.jpg" alt="">
+          </div>
+          <div class="col-md-4">
+            <img class="productImg" src="images/9.jpg" alt="">
+            <img class="productImg" src="images/10.jpg" alt="">
+            <img class="productImg" src="images/11.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br> <br>
+
+    <section id="content-5">
+      <h1 id="testimonialHead" class="font-ubuntu">❤️   From Our Customers</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 testimonial">
+            <div class="card" style="width: 18rem;">
+              <img src="images/c1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">John Doe</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 testimonial">
+            <div class="card" style="width: 18rem;">
+              <img src="images/c2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hazel Grace</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 testimonial">
+            <div class="card" style="width: 18rem;">
+              <img src="images/c3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jane Doe</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 testimonial">
+            <div class="card" style="width: 18rem;">
+              <img src="images/c4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Robert Foster</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="footer">
+
+
+      <div class="mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12 about-company">
+              <h2>Horizon</h2>
+              <p class="pr-5 text-white-50">Feel free to send us a message, we would love to hear from you! </p>
+              <p> <a href="mailto:someone@site.com"><i class="fas footerIcon fa-envelope"></i></a> <a href="#"><i class="fab footerIcon fa-facebook-square"></i></a> </p>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+              <ul class="m-0 p-0">
+                <li>- <a class="footerLink" href="#">Home</a></li>
+                <li>- <a class="footerLink" href="#">About</a></li>
+                <li>- <a class="footerLink" href="#">Products</a></li>
+                <li>- <a class="footerLink" href="#">Sourcing Agent</a></li>
+                <li>- <a class="footerLink" href="#">Gallery</a></li>
+                <li>- <a class="footerLink" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 location">
+              <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+              <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+              <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-xxxx</p>
+              <p><i class="fa fa-envelope-o mr-3"></i>info@horizon.com</p>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col copyright">
+              <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </section>
 
     <!-- scripts -->
