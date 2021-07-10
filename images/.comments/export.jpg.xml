@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comment version="3.0">
+  <caption>Industrial port and container yard</caption>
+  <note>Industrial port and container yard</note>
+  <place/>
+  <categories>
+    <category value="ship"/>
+    <category value="box"/>
+    <category value="business"/>
+    <category value="cargo"/>
+    <category value="city"/>
+    <category value="commerce"/>
+    <category value="courier"/>
+    <category value="crane"/>
+    <category value="dock"/>
+    <category value="transportation"/>
+    <category value="freight"/>
+    <category value="global"/>
+    <category value="shipping"/>
+    <category value="trade"/>
+    <category value="storage"/>
+    <category value="sky"/>
+    <category value="harbor"/>
+    <category value="seaport"/>
+    <category value="nautical"/>
+    <category value="maritime"/>
+    <category value="loading"/>
+    <category value="industry"/>
+    <category value="industrial"/>
+    <category value="import"/>
+    <category value="container"/>
+    <category value="many"/>
+    <category value="truck"/>
+    <category value="port"/>
+    <category value="color"/>
+    <category value="stack"/>
+    <category value="blue"/>
+    <category value="bulk"/>
+    <category value="carrying"/>
+    <category value="china"/>
+    <category value="commercial"/>
+    <category value="deliver"/>
+    <category value="goods"/>
+    <category value="weight"/>
+    <category value="export"/>
+    <category value="logistic"/>
+    <category value="warehouse"/>
+    <category value="trucking"/>
+    <category value="transport"/>
+    <category value="transfer"/>
+    <category value="shipment"/>
+    <category value="shanghai"/>
+    <category value="red"/>
+    <category value="pier"/>
+    <category value="metal"/>
+    <category value="logistics"/>
+  </categories>
+</comment>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Horizon Exports</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/widescreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/smallscreen.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Tangerine:wght@700&family=Ubuntu&display=swap');
+
+  .font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .font-tangerine {
+    font-family: 'Tangerine', cursive;
+  }
+
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .col-md-4 {
+    text-align: center;
+  }
+
+  .nav-link {
+    margin: 0px 20px 0 20px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  body {
+    padding-top: 70px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: 0;
+  }
+
+  .navbar-toggler span {
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: relative;
+    left: 0;
+    opacity: 1;
+  }
+
+  .navbar-toggler span:nth-child(1),
+  .navbar-toggler span:nth-child(3) {
+    -webkit-transition: transform .35s ease-in-out;
+    -moz-transition: transform .35s ease-in-out;
+    -o-transition: transform .35s ease-in-out;
+    transition: transform .35s ease-in-out;
+  }
+
+  .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+  }
+
+  .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+  }
+
+  .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+  }
+
+
+  .myButtonDark {
+
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .myButtonDark:hover {
+    border-style: solid;
+    color: #343a40;
+    background-color: white;
+  }
+
+  h5 {
+    padding: 20px;
+  }
+
+  #carouselExampleInterval {
+    margin: 20px;
+  }
+</style>
+
+<body>
+  <section>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"> Horizon <i class="d-sm-none d-md-inline fa fa-star-o"></i>
+        </a>
+        <button class="navbar-toggler collapsed position-relative" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+          <span> </span>
+          <span> </span>
+          <span> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsingNavbar">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Company</a>
+                <a class="dropdown-item" href="#">Certifications</a>
+                <a class="dropdown-item" href="#">Key Person</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Fruits and Vegetables</a>
+                <a class="dropdown-item" href="#">Spices</a>
+                <a class="dropdown-item" href="#">Grocery</a>
+                <a class="dropdown-item" href="#">Namkeen and Frozen</a>
+                <a class="dropdown-item" href="#">Handicraft</a>
+                <a class="dropdown-item" href="#">Garments</a>
+                <a class="dropdown-item" href="#">Ceramic and Stone</a>
+                <a class="dropdown-item" href="#">Copper Products</a>
+                <a class="dropdown-item" href="#">Packaging Products</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Gallery</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sourcing Agent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="content-1">
+
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="font-tangerine">Welcome</h3>
+          <h5 class="font-ubuntu">to</h5>
+          <h1 class="font-montserrat">Horizon Exports and Imports</h1>
+          <h5 class="font-ubuntu">For All Your Transportation Needs</h5>
+          <a class="myButtonDark" href="#">Know More</a>
+          <a class="myButtonDark" href="#">Contact Us</a>
+        </div>
+        <div class="col-md-8">
+          <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="2000">
+                <img src="images/world.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src="images/courier.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src="images/transport.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="content-2">
+      <div class="row">
+        <div class="col-md-6">
+
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+    </section>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>
